@@ -1,0 +1,90 @@
+/*
+Theme Name: Firmasite Base - Custom Child Theme
+Text Domain: firmasite-base-child
+Tags: buddypress
+Template: firmasite-base
+
+Description: Firmasite Base - Custom Child Theme
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl.txt
+
+You can add all custom css codes here
+Some example codes you can use: 
+http://theme.firmasite.com/tag/custom-css/
+*/
+
+h1, h2, h3, h4, h5 {
+	font-family: Arial;
+	font-weight: bold;
+}
+
+h3, .h3 {
+	font-size:  20px;
+}
+
+#masthead {
+	padding-top: 0;
+}
+
+.navbar-nav>li>a {
+	text-transform: uppercase;
+	color: #061132;
+}
+
+
+#main {
+  margin-top: 0;
+}
+
+#layerslider_1_1 .ls-inner {
+	background-size: 100% 100%;
+}
+
+.site {
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f6df2+0,25439b+49,0a173f+100 */
+	background: #3f6df2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3f6df2 0%, #25439b 49%, #0a173f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f6df2), color-stop(49%,#25439b), color-stop(100%,#0a173f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f6df2', endColorstr='#0a173f',GradientType=0 ); /* IE6-9 */
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.site-footer {
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+	.navbar:after {
+		background: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav>li>a {
+		padding-top: 22px;
+		padding-bottom: 21px;
+	}
+	.nav>li.active>a,
+	.nav>li>a:hover {
+		color: #fff;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f6df2+0,25439b+49,0a173f+100 */
+		background: #3f6df2; /* Old browsers */
+		background: -moz-linear-gradient(top,  #3f6df2 0%, #25439b 49%, #0a173f 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f6df2), color-stop(49%,#25439b), color-stop(100%,#0a173f)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #3f6df2 0%,#25439b 49%,#0a173f 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f6df2', endColorstr='#0a173f',GradientType=0 ); /* IE6-9 */
+	}
+	.site-footer {		
+		padding-top: 50px;
+	}
+}
