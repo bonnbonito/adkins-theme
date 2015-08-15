@@ -82,3 +82,28 @@ function firmasite_childtheme_dont_update( $r, $url ) {
     return $r;
 }
  
+
+function adkins_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/assets/style-login.css' );    
+}
+
+add_action( 'login_enqueue_scripts', 'adkins_stylesheet' );
+
+function adkins_logo_url() {
+    return 'http://onlineinternetresults.com';
+}
+add_filter( 'login_headerurl', 'adkins_logo_url' );
+
+function adkins_logo_url_title() {
+    return 'Designed by Online Internet Results';
+}
+add_filter( 'login_headertitle', 'adkins_logo_url_title' );
+
+function assets_scripts() {
+	wp_enqueue_script( 'ripple_js', get_stylesheet_directory_uri() . '/assets/ripples.min.js', array('jquery'), NULL, true );
+	wp_enqueue_script( 'material_js', get_stylesheet_directory_uri() . '/assets/material.min.js', array('jquery', 'ripple_js'), NULL, true );
+	wp_enqueue_style( 'ripple_css', get_stylesheet_directory_uri() . '/assets/ripples.css');
+	
+}
+
+add_action( 'wp_enqueue_scripts', 'assets_scripts');

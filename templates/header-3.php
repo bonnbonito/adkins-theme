@@ -56,8 +56,8 @@ if (has_nav_menu('main_menu')){
                 default:
            ?>
             <nav id="mainmenu" role="navigation" class="site-navigation main-navigation navbar <?php if ((isset($firmasite_settings["alternative"]) && !empty($firmasite_settings["alternative"])) || "alternative" == $firmasite_settings["menu-style"]){ echo " navbar-inverse";} else { echo " "; } ?>">          
-              <div class="navbar-header pull-right">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".main-menu-collapse">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed withripple" data-toggle="collapse" data-target=".main-menu-collapse">
                     <span class="sr-only"><?php _e("Toggle navigation", 'firmasite-base' );?></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>

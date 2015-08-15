@@ -13,6 +13,9 @@ global $firmasite_settings;
 <?php get_template_part( 'templates/footer', $firmasite_settings["footer-style"] ); ?>
 
 <?php wp_footer(); ?>
+<script>
+jQuery.material.init();
+</script>
 
 <!-- <?php printf(  '%d queries in %.3f seconds, using %.2fMB memory', get_num_queries(), timer_stop(1), memory_get_peak_usage() / 1024 / 1024 ); ?> -->
 </body>

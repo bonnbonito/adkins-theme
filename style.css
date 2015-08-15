@@ -1,16 +1,13 @@
 /*
-Theme Name: Firmasite Base - Custom Child Theme
-Text Domain: firmasite-base-child
-Tags: buddypress
+Theme Name: Adkins Cabling Theme
+Text Domain: adkins
+Author: Bonn Joel Elimanco
+Author Uri: http://bonnjoel.com
 Template: firmasite-base
 
-Description: Firmasite Base - Custom Child Theme
+Description: PSD to HTML Wordpress theme
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.txt
-
-You can add all custom css codes here
-Some example codes you can use: 
-http://theme.firmasite.com/tag/custom-css/
 */
 
 h1, h2, h3, h4, h5 {
@@ -29,6 +26,34 @@ h3, .h3 {
 .navbar-nav>li>a {
 	text-transform: uppercase;
 	color: #061132;
+}
+
+.navbar-toggle { 
+  background-color: rgb(27, 51, 121);  
+  border: 1px solid rgb(63, 108, 240); 
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+}
+
+.navbar-default, .navbar-inverse {
+	border-top: 1px solid rgba(15, 31, 80, 1);
+}
+
+.navbar-toggle .icon-bar {
+	background: #fff;
+}
+
+button.navbar-toggle:before {
+  position: absolute;
+  content: 'Menu';
+  left: -80px;
+  font-size: 25px;
+  top: 0;
+  text-transform: uppercase;
 }
 
 
@@ -58,6 +83,58 @@ h3, .h3 {
 .site-footer {
 	font-size: 12px;
 	padding-top: 20px;
+}
+
+.social {
+	list-style: none;
+	display: inline;
+	float: right;
+}
+
+.social li {
+	float: left;
+	margin-right: 10px;	
+}
+
+.social li a {
+	text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;    
+    background: url('img/social-dark.png') no-repeat;
+    display: block;
+    width: 41px;
+    height: 40px;
+    -webkit-transition: .4s background ease-in;
+    -o-transition: .4s background ease-in;
+    transition: .4s background ease-in;
+}
+
+.social li a:hover {
+	background: url('img/social-blue.png') no-repeat;
+}
+
+.social li.linkedin a {
+	background-position: -48px;
+}
+
+.social li.linkedin a:hover {
+	background-position: -48px;
+}
+
+.social li.fb a {
+	background-position: -96px;
+}
+
+.social li.fb a:hover {
+	background-position: -96px;
+}
+
+.social li.yt a {
+	background-position: -145px;
+}
+
+.social li.yt a:hover {
+	background-position: -145px;
 }
 
 @media (min-width: 992px) {
