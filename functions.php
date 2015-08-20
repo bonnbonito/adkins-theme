@@ -8,8 +8,6 @@ require_once ( get_stylesheet_directory() . '/functions/child_theme.php');	// In
  */
 
 
-
-
 /* 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
  * How to add bootstrap skins
